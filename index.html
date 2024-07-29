@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-ixon" href="Webisite-Logo.png">
+    <title>Yogansh's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Yogansh</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Yogansh</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="profile-pic.jpg" alt="Yogansh Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm am</p>
+            <h1 class="title">Yogansh</h1>
+            <p class="section__text__p2">Copywriter</p>
+            <div class="btn-container">
+                <a href="https://drive.google.com/drive/folders/1x_ircaLpt3BRWpm6iGh_vNop51Ve1DRZ?usp=sharing" target="_blank"><button class="btn btn-color-2" >
+                Drive</button></a>
+                <button class="btn btn-color-1" 
+                onclick= "location.href='./#contact'">
+                Contact Info</button>
+            </div>
+            <!-- <div id="socials-container">
+                <img src="linkedin.png" alt="My Linkedin Profile"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/yogansh-makkar/'">
+                <img src="github.png" alt="My Github Profile"
+                class="icon" onclick="location.href='https://github.com/redakai21'">
+            </div> -->
+            <p class="section__text__p1">Scroll Down To See More</p>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">My Experience Speaks More than me</p>
+        <h1 class="title">My Clients</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="ali-abdaal-youtuber-author-podcaster-productivity-expert-feel-good-productivity-book.jpg" alt="Profile Picture" 
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="email.png" alt="Eperience icon"
+                        class="icon" style="scale: 1.5;">
+                        <h3>Book Launch</h3>
+                        <p>Feel Good Productivity<br>Sales increased by 12%</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="copy-two-paper-sheets-interface-symbol.png" alt="Education icon"
+                        class="icon">
+                        <h3>Course Launch</h3>
+                        <p>Part Time Youtuber Academy<br>Enrolment increased by 17%</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Choosing Yogansh as our Junior writer proved out to be a lucrative decision. 
+                        Never did he forgo any rewrite for a copy and was always available for a review.<br>-Ali
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="Varun.png" alt="Profile Picture" 
+                class="about-pic">
+            </div>
+            <div class="about-details-container2">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="play.png" alt="Eperience icon"
+                        class="icon" style="scale: 1.5;">
+                        <h3>Meeting CEO of Google</h3>
+                        <p>Promotion Of Video<br>Script Writing</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="copy-two-paper-sheets-interface-symbol.png" alt="Education icon"
+                        class="icon">
+                        <h3>Youtube Channel</h3>
+                        <p>Scripting</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Decent kid with good skills- Varun
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section-container" style="margin-top: 300px;">
+            <div class="section__pic-container">
+                <img src="neutonic.png" alt="Profile Picture" 
+                class="about-pic">
+            </div>
+            <div class="about-details-container" style="margin-left: 40px;">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="email.png" alt="Eperience icon"
+                        class="icon" style="scale: 1.5;">
+                        <h3>Product Launch</h3>
+                        <p>Marketing for the energy Drink</p>
+                    </div>
+                    
+                <div class="text-container">
+                    <p>The boy is a life saver - Chris
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <!-- <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Varun Mayya</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="Varun.png" alt="Experience icon" class="about-pic" style="scale: 0.3; align-items: left;">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                   
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Editing Capabilities</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Premiere Pro</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>After Effects</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>PhotoShop</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section> -->
+    <!-- <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="Screenshot.png" alt="Project 2" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Video Editing</br>Projects</h2>
+                <div class="btn-container">      
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://drive.google.com/drive/folders/162vCL3fLiYduqgonqtwo6bQQ1fa65HDM?usp=sharing'">Drive Link</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="Screenshot2.png" alt="Miranda" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">The Miranda Project</br></h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/redakai21'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://redakai21.github.io/Retro-Design-Website/'">Live Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="Pc-effect.png" alt="Project 3" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">The Rayban Pc Project</br></h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                    
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://redakai21.github.io/Ray-ban-Infinity/'">Live Demo</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <img src="arrow.png" alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"/>
+    </section> -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:yogansh322@gmail.com">yogansh322@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Yogansh. All Rights Reserved.</p>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
